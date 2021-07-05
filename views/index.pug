@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .row.container
+    .col-md-10
+      #head.font-weight-bold
+      #chat
+      span#feedback
+      form#form(action='')
+        br
+        input#input.form-control.form-control-lg(autocomplete='off')
+        br
+        button.btn.btn-warning Send
+      hr
+      #priv
+        #privchat
+        form#form1
+          b Private Message 
+          br
+          label(for='pp') To:
+          select#pp.form-control.form-control-lg.mb-3(name='pp')
+          br
+          label(for='message') Message
+          input#message.form-control.form-control-lg(type='text')
+          br
+          input.btn.btn-danger(type='submit',value='Send')
+    .col-md-2
+      #Users
+        h2 Persons Online:
+        #users
+  
